@@ -22,6 +22,8 @@ public class BinarySearchTreeTest {
         node3 = binarySearchTree.treeMaximum(null);
         Assertions.assertNotNull(node3);
         System.out.println(node3.val);
+        TreeNode parent = binarySearchTree.findParent(node3);
+        System.out.println("parent of "+node3.val +" is " +parent.val);
 
     }
 
